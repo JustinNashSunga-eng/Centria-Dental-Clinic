@@ -1,0 +1,267 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Centria Dental Clinic</title>
+  <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/nhDD5YyP/279025936-101853235849342-5152598346667902980-n.jpg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+      background-color: #f8f9fa;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #008080 !important;
+    }
+
+    .navbar-brand, .nav-link, .navbar-toggler {
+      color: white !important;
+    }
+
+    .navbar-toggler {
+      border-color: white !important;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+
+    .nav-link {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://i.postimg.cc/wvbZ1p00/474928852-638922385475755-8061059346349018547-n.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-weight: bold;
+    }
+
+    /* Button Style */
+    .btn-teal {
+      background-color: #7ab0ff;
+      color: white;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .btn-teal:hover {
+      background-color: #5f95e6;
+      transform: scale(1.05);
+    }
+
+    /* Main Content */
+    .content {
+      padding: 60px 0;
+    }
+
+    h2, h3, h4 {
+      color: #008080;
+    }
+
+    .contact-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      height: 300px;
+    }
+
+    .review-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background-color: #010606;
+      color: white;
+    }
+
+    /* Image Hover Zoom Effect */
+    .contact-card img {
+      transition: transform 0.3s ease;
+      cursor: pointer; /* Indicates clickable image */
+    }
+
+    .contact-card img:hover {
+      transform: scale(1.1); /* Zoom in on hover */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767.98px) {
+      .hero {
+        padding: 80px 20px;
+      }
+      .contact-card {
+        margin-bottom: 20px;
+      }
+      .content h2 {
+        text-align: center;
+      }
+      .reviews {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html">Centria Dental Clinic</a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        <span class="text-white fw-semibold">MENU</span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="Home.html" target="_blank">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="About.html" target="_blank">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" target="_blank">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="Patient Info.html" target="_blank">Patient Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="Dentists.html" target="_blank">Dentists</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html" target="_blank">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h1>Services of Centria Dental Clinic</h1>
+      <p>Your trusted partner in dental health and wellness.</p>
+      <a href="Patient Info.html" class="btn btn-teal btn-lg mt-3">Make An Appointment</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="pt-5 mt-5" style="background-color: #ffffff; color: white;">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Services - Centria Dental Clinic</h2>
+      
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Oral Prophylaxis -->
+        <div class="col-md-6 col-12">
+          <div class="contact-card text-center p-3 shadow rounded" style="background-color: #006666; color: white;">
+            <h5><strong>Oral Prophylaxis</strong></h5>
+            <a href="Patient Info.html" target="_blank">
+              <img src="oral prophylaxis.png" alt="Oral Prophylaxis" class="img-fluid mt-3 rounded" style="max-width: 500px;">
+            </a>
+            <p class="mt-3">
+              Oral prophylaxis is a professional dental cleaning procedure designed to remove plaque, tartar, and surface stains from your teeth. 
+              This preventive treatment helps protect against cavities, gum disease, and bad breath, promoting long-term oral health. 
+              Regular oral prophylaxis appointments keep your smile clean, healthy, and confident.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tooth Restoration -->
+        <div class="col-md-6 col-12">
+          <div class="contact-card text-center p-3 shadow rounded" style="background-color: #006666; color: white;">
+            <h5><strong>Tooth Restoration</strong></h5>
+            <a href="Patient Info.html" target="_blank">
+              <img src="tooth restoration.webp" alt="Tooth Restoration" class="img-fluid mt-3 rounded" style="max-width: 500px;">
+            </a>
+            <p class="mt-3">
+              Tooth restoration is a dental treatment that repairs and strengthens damaged or decayed teeth. Using fillings, crowns, or bonding, it restores your teeth’s function and appearance, helping you maintain a healthy, confident smile.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tooth Extraction -->
+        <div class="col-md-6 col-12">
+          <div class="contact-card text-center p-3 shadow rounded" style="background-color: #006666; color: white;">
+            <h5><strong>Tooth Extraction</strong></h5>
+            <a href="Patient Info.html" target="_blank">
+              <img src="tooth extraction.jpg" alt="Tooth Extraction" class="img-fluid mt-3 rounded" style="height: 268px" width="250">
+            </a>
+            <p class="mt-3">
+              Tooth extraction is a dental procedure that safely removes damaged or problematic teeth. This treatment helps relieve pain, prevent infection, and protect surrounding teeth, promoting long-term oral health and a comfortable, healthy smile.
+            </p>
+          </div>
+        </div>
+
+        <!-- Dentures -->
+        <div class="col-md-6 col-12">
+          <div class="contact-card text-center p-3 shadow rounded" style="background-color: #006666; color: white;">
+            <h5><strong>Dentures</strong></h5>
+            <a href="Patient Info.html" target="_blank">
+              <img src="Dentures.png" alt="Dentures" class="img-fluid mt-3 rounded" style="max-width: 400px;">
+            </a>
+            <p class="mt-3">
+              Dentures are custom-made removable teeth that replace missing or damaged teeth. This treatment restores chewing function, improves speech, and enhances the appearance of your smile, promoting long-term oral health and confidence.
+            </p>
+          </div>
+        </div>
+
+        <!-- Orthodontics -->
+        <div class="col-md-6 col-12">
+          <div class="contact-card text-center p-3 shadow rounded" style="background-color: #006666; color: white;">
+            <h5><strong>Orthodontics</strong></h5>
+            <a href="Patient Info.html" target="_blank">
+              <img src="orthodontics.jpg" alt="Orthodontics" class="img-fluid mt-3 rounded" style="max-width: 500px;">
+            </a>
+            <p class="mt-3">
+              Orthodontics is a dental treatment that corrects misaligned teeth and jaws using braces, aligners, or other appliances. This treatment improves bite function, enhances the appearance of your smile, and promotes long-term oral health and confidence.
+            </p>
+          </div>
+        </div>
+
+      </div> <!-- end row -->
+    </div> <!-- end container -->
+
+    <!-- Spacer for footer -->
+    <div style="height: 60px;"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <div class="container">
+      <p>&copy; 2025 Centria Dental Clinic. All rights reserved. | Lyceum of the Philippines University Cavite Project</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

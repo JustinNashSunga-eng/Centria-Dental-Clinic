@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Centria Dental Clinic</title>
+  <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/nhDD5YyP/279025936-101853235849342-5152598346667902980-n.jpg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+      background-color: #f8f9fa;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #008080 !important;
+    }
+
+    .navbar-brand, .nav-link, .navbar-toggler {
+      color: white !important;
+    }
+
+    .navbar-toggler {
+      border-color: white !important;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+
+    .nav-link {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://i.postimg.cc/wvbZ1p00/474928852-638922385475755-8061059346349018547-n.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-weight: bold;
+    }
+
+    /* Button Style */
+    .btn-teal {
+      background-color: #7ab0ff;
+      color: white;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .btn-teal:hover {
+      background-color: #5f95e6;
+      transform: scale(1.05);
+    }
+
+    /* Main Content */
+    .content {
+      padding: 60px 0;
+    }
+
+    h2, h3, h4 {
+      color: #008080;
+    }
+
+    .contact-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      height: 300px;
+    }
+
+    .review-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background-color: #040505;
+      color: white;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767.98px) {
+      .hero {
+        padding: 80px 20px;
+      }
+      .contact-card {
+        margin-bottom: 20px;
+      }
+      .content h2 {
+        text-align: center;
+      }
+      .reviews {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html">Centria Dental Clinic</a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        <span class="text-white fw-semibold">MENU</span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html" target="_blank">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html" target="_blank">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html" target="_blank">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="Patient Info.html" target="_blank">Patient Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="dentists.html" target="_blank">Dentists</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h1>About Centria Dental Clinic</h1>
+      <p>Your trusted partner in dental health and wellness.</p>
+      <a href="Patient Info.html" class="btn btn-teal btn-lg mt-3">Make An Appointment</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="pt-5 mt-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Contact Centria Dental Clinic</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-12">
+          <div class="contact-card">
+            <h5><strong>📍 Address:</strong></h5>
+            <p>0164 Governor Ferrer, Unit A Grepson Bldg, Pasong Kawayan, General Trias Cavite, Cavite, Philippines, 4107</p>
+
+            <h5><strong>📞 Phone:</strong></h5>
+            <p><a href="tel:09762209184" style="color:#008080; text-decoration:none;">0976 220 9184</a></p>
+
+            <h5><strong>📧 Email:</strong></h5>
+            <p><a href="mailto:centriadentalclinicph@gmail.com" style="color:#008080; text-decoration:none;">centriadentalclinicph@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-12">
+          <div class="contact-card">
+            <h4>Clinic Information</h4>
+            <p><strong>Status:</strong> Closed now</p>
+            <p><strong>Category:</strong> Dentist and Dental Surgery</p>
+            <h5>Location Map</h5>
+            <iframe src="https://www.google.com/maps?q=Pasong+Kawayan,+General+Trias,+Cavite,+Philippines&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2>Our Background</h2>
+          <p>Dental health is essential for maintaining overall wellness, confidence, and quality of life. At Centria Dental Clinic, we are committed to providing reliable and affordable dental information and services. Our clinic offers a comfortable environment, professional care, and a range of treatments tailored to your dental needs.</p>
+
+          <div class="mission-vision">
+            <h3>Mission</h3>
+            <p>To deliver high-quality, patient-centered dental care that emphasizes prevention, education, and accessibility, ensuring every individual can achieve optimal oral health.</p>
+
+            <h3>Vision</h3>
+            <p>To be the leading dental clinic in the community, recognized for our commitment to innovation, compassion, and excellence in dental services.</p>
+          </div>
+
+          <h3>Why Choose Us?</h3>
+          <ul>
+            <li>Conveniently located in General Trias, Cavite.</li>
+            <li>Professional and friendly dental staff.</li>
+            <li>Modern equipment and patient-centered service.</li>
+            <li>Clear and reliable communication channels.</li>
+          </ul>
+
+          <h3>Reviews</h3>
+          <div class="review-box">
+            <p><strong>Rejen</strong> recommends Centria Dental Clinic.</p>
+            <p>"Great service and accommodating staff!"</p>
+          </div>
+          <div class="review-box">
+            <p><strong>Ann La Torre</strong> recommends Centria Dental Clinic.</p>
+            <p>"The staff are very kind and the dentist is excellent. Highly recommended!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <div class="container">
+      <p>&copy; 2025 Centria Dental Clinic. All rights reserved. | Lyceum of the Philippines University Cavite Project</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+    
